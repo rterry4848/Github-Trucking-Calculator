@@ -1,7 +1,0 @@
-// Minimal service worker — just enough to satisfy installability requirements.
-self.addEventListener('install', (e) => self.skipWaiting());
-self.addEventListener('activate', (e) => self.clients.claim());
-self.addEventListener('fetch', (e) => {
-  "cleanUrls": true,
-  "trailingSlash": false
-}
